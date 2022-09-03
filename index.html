@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo/estilo.css" />
+    <link rel="stylesheet" href="estilo/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="contenedor_grid">
+        <div class="contendor_texto">
+          <h1 class="texto__principal">
+            La realidad es bastante simple, lo haces o no lo haces.
+          </h1>
+          <div class="parrafo__principal">
+            <p class="parrafo">
+              ¿Está cansado de no tener nunca el cuerpo que siempre has deseado?
+              Regístrese para una prueba gratuita y aproveche el mejor producto
+              del mercado. No hay nada que perder con esta garantía de
+              devolución del 100% del dinero, ¡así que dése una oportunidad y
+              vea lo que puede hacer por su vida!
+            </p>
+            <a href="" class="boton">Comienza con el cambio</a>
+          </div>
+        </div>
+        <div class="contendor__imagen">
+          <span class="circulo">
+            <img src="img/imagen__principal.png" class="imagen" alt="" />
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="contenedor_grid_nuevo">
+      <div class="contenedor_grid-imagen">
+        <span class="triangulo">
+          <img src="img/persona.png" class="persona_gym" alt="" />
+        </span>
+      </div>
+      <div class="contenedor__texto">
+        <span class="cuadrado_texto">
+          <h2>Tu cuerpo is un trabajo de arte</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsam
+            maiores veniam commodi, modi laboriosam recusandae eaque nisi dicta.
+            Eos illo fuga, nesciunt ipsum nobis recusandae delectus nam
+            obcaecati sapiente.
+          </p>
+        </span>
+      </div>
+    </div>
+    <div class="contenedor_card">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="img/segundo.jpg" class="card_imagen" alt="" />
+
+              <div class="card_texto">
+                <h3 class="nombre">Maria Gonzales</h3>
+                <p>Entrenadora de piernas</p>
+              </div>
+              <div class="card_redes">
+                <li>
+                  <ion-icon name="logo-facebook" class="redes"></ion-icon>
+                </li>
+                <li>
+                  <ion-icon name="logo-instagram" class="redes"></ion-icon>
+                </li>
+                <li><ion-icon name="logo-twitter" class="redes"></ion-icon></li>
+                <li><ion-icon name="logo-twitch" class="redes"></ion-icon></li>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide"> <div class="card">
+            <img src="img/segundo.jpg" class="card_imagen" alt="" />
+
+            <div class="card_texto">
+              <h3 class="nombre">Maria Gonzales</h3>
+              <p>Entrenadora de piernas</p>
+            </div>
+            <div class="card_redes">
+              <li>
+                <ion-icon name="logo-facebook" class="redes"></ion-icon>
+              </li>
+              <li>
+                <ion-icon name="logo-instagram" class="redes"></ion-icon>
+              </li>
+              <li><ion-icon name="logo-twitter" class="redes"></ion-icon></li>
+              <li><ion-icon name="logo-twitch" class="redes"></ion-icon></li>
+            </div>
+          </div>
+        </div>
+          <div class="swiper-slide"> 
+            <div class="swiper-slide"> <div class="card">
+            <img src="img/segundo.jpg" class="card_imagen" alt="" />
+
+            <div class="card_texto">
+              <h3 class="nombre">Maria Gonzales</h3>
+              <p>Entrenadora de piernas</p>
+            </div>
+            <div class="card_redes">
+              <li>
+                <ion-icon name="logo-facebook" class="redes"></ion-icon>
+              </li>
+              <li>
+                <ion-icon name="logo-instagram" class="redes"></ion-icon>
+              </li>
+              <li><ion-icon name="logo-twitter" class="redes"></ion-icon></li>
+              <li><ion-icon name="logo-twitch" class="redes"></ion-icon></li>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        freeMode: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
